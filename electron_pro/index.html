@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+
+</head>
+<body>
+  <div class="container well">
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#">
+              <img src="assets/img/logo.png" class="logo">
+              <p id="cms">Course Management System</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="hey"><a href="#"><span class="glyphicon glyphicon-user" ></span> Admin</a></li>
+          <li id="hey"><a href="#"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+        </ul>
+    </nav>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <button type="button" class="btn btn-default btn-lg" id="button">
+            <p class="text text-primary">Find Students Record</p>
+          </button> 
+          <button type="button" class="btn btn-default btn-lg" id="button1">
+            <p class="text text-primary">Find Teachers Record</p>
+          </button>
+          <button type="button" class="btn btn-default btn-lg" id="button2">
+            <p class="text text-primary">Students</p>
+          </button>
+          <button type="button" class="btn btn-default btn-lg" id="button3">
+            <p class="text text-primary">Teachers</p>
+          </button>
+        </div>
+        <div class="panel-body">
+          <button type="button" class="btn btn-default btn-lg" id="button">
+            <p class="text text-primary">Staff</p>
+          </button> 
+          <button type="button" class="btn btn-default btn-lg" id="button1">
+            <p class="text text-primary">Department</p>
+          </button>
+          <button type="button" class="btn btn-default btn-lg" id="button2">
+            <p class="text text-primary">System</p>
+          </button>
+          <button type="button" class="btn btn-default btn-lg" id="button3">
+            <p class="text text-primary">Subject</p>
+          </button>
+        </div>
+  </div>
+
+
+    <script>
+      
+      var connection = mysql.createConnection({
+        
+        host:"localhost",
+        user :"root",
+        password:null,
+        database :"electron"
+      });
+
+      connection.connect((err)=>{
+
+        if(err){
+          return console.log(err.stack);
+        }
+
+        console.log("there is some error");
+      });
+
+      connection.end(()=>{
+        console.log("connection successfully ended");
+      });
+    
+    </script>
+
+
+</body>
+</html>

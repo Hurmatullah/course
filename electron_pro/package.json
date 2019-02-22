@@ -1,0 +1,18 @@
+{
+  "name": "electron_pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Rasaa",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.0.5"
+  },
+  "dependencies": {
+    "mysql": "^2.16.0",
+    "pg": "^7.8.0"
+  }
+}

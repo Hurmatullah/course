@@ -1,0 +1,46 @@
+#aside{
+	background-color:blue;
+}
+
+.logo{
+	width: 20%;
+	height: 70px;
+}
+
+#cms{
+
+	display: inline;
+	color: black;
+	font-size: 18px;
+	margin-left: 5px;
+}
+.list-group-item{
+	background-color: blue;
+	color: #fff;
+	border: none;
+}
+
+#hey{
+	margin-top: 20px;
+}
+
+#button{
+	width: 20%;
+	height: 100px;
+	margin-left: 40px;
+}
+#button1{
+	width: 20%;
+	height: 100px;
+	margin-left: 40px;
+}
+#button2{
+	width: 20%;
+	height: 100px;
+	margin-left: 40px;
+}
+#button3{
+	width: 20%;
+	height: 100px;
+	margin-left: 40px;
+}
